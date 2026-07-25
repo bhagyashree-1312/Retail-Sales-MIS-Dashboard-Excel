@@ -1,7 +1,5 @@
 # Retail-Sales-MIS-Dashboard-Excel
 
-# Retail Sales MIS Dashboard (Excel)
-
 An end-to-end **Management Information System (MIS) dashboard** built entirely in Excel, covering Q1 (Jan–Mar) retail transactions across three branches. The workbook demonstrates a full BI pipeline — raw monthly data → Power Query consolidation → calculated fields → PivotTables → interactive dashboard — without any external tools.  
 ---
 
@@ -83,7 +81,7 @@ Seven columns are engineered on top of the raw fields using native Excel Table s
 
 ---
 
-## 📊 PivotTables (12, one shared PivotCache)
+## 📊 PivotTables 
 
 All 12 pivots run off a single cache sourced from `Sales_Master` (1,000 records), which keeps the workbook light and ensures every report refreshes in sync.
 
@@ -104,7 +102,7 @@ All 12 pivots run off a single cache sourced from `Sales_Master` (1,000 records)
 
 ---
 
-## 📈 Charts (8, native Excel charts)
+## 📈 Charts 
 
 | Chart | Type | Bound Pivot |
 |---|---|---|
@@ -119,7 +117,7 @@ All 12 pivots run off a single cache sourced from `Sales_Master` (1,000 records)
 
 ---
 
-## 🎯 KPI Cards (Dashboard sheet)
+## 🎯 KPI Cards 
 
 Implemented as **cell-linked textboxes** (`textlink="Pivot!A2"` etc.) rather than hardcoded values — each card renders live from the `KPI Values` pivot and updates automatically on refresh/filter.
 
@@ -136,7 +134,7 @@ Implemented as **cell-linked textboxes** (`textlink="Pivot!A2"` etc.) rather tha
 
 ---
 
-## 🎛️ Slicers (5, cross-filtering)
+## 🎛️ Slicers 
 
 `Month` · `City` · `Payment` · `Product line` · `Customer type`
 
@@ -144,7 +142,7 @@ Each slicer has its own `slicerCache` wired to every relevant PivotTable, so one
 
 ---
 
-## 💡 Business Insights (auto-generated narrative)
+## 💡 Business Insights 
 
 1. January generated the highest sales.
 2. Branch C recorded the highest revenue.
